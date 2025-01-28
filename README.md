@@ -60,7 +60,7 @@ fast-js-animation
 </div>
 ```
 
-**SCRIPT**
+**JS**
 ```js
 <script src="fast-js-animation.js"></script>
 <script type="text/javascript">
@@ -76,4 +76,4 @@ Copyright (c) 2024-2025 You Digital
 
 <https://www.you-digital.ru>
 
-<https://www.banners728.ru/>
+<https://www.banners728.ru>
