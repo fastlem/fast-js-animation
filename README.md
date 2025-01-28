@@ -13,30 +13,36 @@ fast-js-animation
 
 ```js
 { 
-	"MasterTiming":8000,  	// общий хронометраж анимации всего ролика в милисекундах  
-	"numberOfCycles":2,		// количество циклов анимации. Если указано 0 - бесконечно
-	"frameStopTime":5000  	// временная метка остановки анимации в миллисекундах (для стоп-кадра). Если указано 0 - стоп-кадр нет. 
+	"MasterTiming":12000,  	// общий хронометраж анимации всего ролика в милисекундах. В примере: 12 секунд
+	"numberOfCycles":2,	// количество циклов анимации. Если указано 0 - бесконечно.
+	"frameStopTime":10000  	// временная метка остановки анимации в миллисекундах (стоп-кадр). Если указано 0 стоп-кадр нет. 
 }
 ```
 
-### Пример поочередной анимации смены текста из 2х кадров:
+### Пример анимации баннера из 2 кадров:
 
 **HTML**
 ```html
 <link href="fast-js-animation.css" rel="stylesheet">
 <div class="mainBanner">
-	<div class="H1 text_title"
+	<h1 class="text_title"
 		fastAnim_StartStyle="onLeft" 
 		fastAnim_StopStyle="offOpacity"
 		fastAnim_StartTime="0" 
 		fastAnim_StopTime="7000"
-	></div>
-	<div class="H1 text_title2"
+	>Этот заголовок первого кадра вылетит слева с 0 секунды и исчезнет через прозрачность на 7 секунде</h1>
+	<h2 class="text_subline"
 		fastAnim_StartStyle="onZoomIn" 
 		fastAnim_StopStyle="offOpacity"
-		fastAnim_StartTime="800" 
+		fastAnim_StartTime="1000" 
 		fastAnim_StopTime="7000"
-	></div>
+	>Этот подзаголовок первого кадра повится с 1 секунды и исчезнет на 7 секунде</h2>
+	<h1 class="text_title"
+		fastAnim_StartStyle="onZoomIn" 
+		fastAnim_StopStyle="offOpacity"
+		fastAnim_StartTime="8000" 
+		fastAnim_StopTime="11000"
+	>Этот заголовок второго кадра появится на 8 секунде и исчезнет на 11 секунде</h1>
 </div>
 ```
 
@@ -45,13 +51,16 @@ fast-js-animation
 <script src="fast-js-animation.js"></script>
 <script type="text/javascript">
 	initFastAnimation({ 
-		"MasterTiming":8000,
-		'frameStopTime':5000,
-		'numberOfCycles':2,
+		"MasterTiming":12000,	// общий хронометраж 12 сек
+		"numberOfCycles":2,	// зациклен 2 раза
+		"frameStopTime":10000,	// после окончания 2х циклов остановить анимацию на 10 секунде
+
 	});
 </script>
 ```
-
+-----------------------------------
 Copyright (c) 2024-2025 You Digital
+
 <https://www.you-digital.ru>
+
 <https://www.banners728.ru/>
