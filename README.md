@@ -29,20 +29,23 @@ fast-js-animation
 		fastAnim_StartStyle="onLeft" 
 		fastAnim_StopStyle="offOpacity"
 		fastAnim_StartTime="0" 
-		fastAnim_StopTime="7000"
-	>Этот заголовок первого кадра вылетит слева с 0 секунды и исчезнет через прозрачность на 7 секунде</h1>
+		fastAnim_StopTime="7000">
+	Этот заголовок первого кадра вылетит слева с 0 секунды и исчезнет через прозрачность на 7 секунде
+	</h1>
 	<h2 class="text_subline"
 		fastAnim_StartStyle="onZoomIn" 
 		fastAnim_StopStyle="offOpacity"
 		fastAnim_StartTime="1000" 
-		fastAnim_StopTime="7000"
-	>Этот подзаголовок первого кадра повится с 1 секунды и исчезнет на 7 секунде</h2>
+		fastAnim_StopTime="7000">
+	Этот подзаголовок первого кадра повится с 1 секунды и исчезнет на 7 секунде
+	</h2>
 	<h1 class="text_title"
 		fastAnim_StartStyle="onZoomIn" 
 		fastAnim_StopStyle="offOpacity"
 		fastAnim_StartTime="8000" 
-		fastAnim_StopTime="11000"
-	>Этот заголовок второго кадра появится на 8 секунде и исчезнет на 11 секунде</h1>
+		fastAnim_StopTime="11000">
+	Этот заголовок второго кадра появится на 8 секунде и исчезнет на 11 секунде
+	</h1>
 </div>
 ```
 
@@ -50,12 +53,11 @@ fast-js-animation
 ```js
 <script src="fast-js-animation.js"></script>
 <script type="text/javascript">
-	initFastAnimation({ 
-		"MasterTiming":12000,	// общий хронометраж 12 сек
-		"numberOfCycles":2,	// зациклен 2 раза
-		"frameStopTime":10000,	// после окончания 2х циклов остановить анимацию на 10 секунде
-
-	});
+initFastAnimation({ 
+	"MasterTiming":12000,	// общий хронометраж 12 сек
+	"numberOfCycles":2,	// зациклен 2 раза
+	"frameStopTime":10000	// после окончания 2х циклов остановить анимацию на 10 секунде
+});
 </script>
 ```
 -----------------------------------
