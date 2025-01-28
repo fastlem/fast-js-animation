@@ -12,10 +12,12 @@ fast-js-animation
 ### Доступные стили анимации
 
 Появление блоков:
-`onZoomIn`, `onZoomOut`, `onOpacity`, `onLeft`, `onBottom`
+`onZoomIn`, `onZoomOut`, `onOpacity`, `onLeft`, `onTop`, `onRight`, `onBottom`
 
 Исчезновения блоков:
-`offZoomIn`, `offZoomOut`, `offOpacity`, `offLeft`, `offBottom`
+`offZoomIn`, `offZoomOut`, `offOpacity`, `offLeft`, `offTop`, `offRight`, `offBottom`
+
+Вы можете самостоятельно добавить или модифицировать текущие стили под креативную идею.  
 
 ### Запуск анимации
 Подключите в проект файл стилей, скрипт и вызовите функцию `initFastAnimation({...})` с массивом параметров:
