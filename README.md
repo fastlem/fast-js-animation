@@ -71,9 +71,4 @@ fast-js-animation
 	});
 </script>
 ```
------------------------------------
-Copyright (c) 2024-2025 You Digital
 
-<https://www.you-digital.ru>
-
-<https://www.banners728.ru>
