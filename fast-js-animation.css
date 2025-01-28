@@ -1,0 +1,172 @@
+﻿/*!
+* @license fast-js-animation v1.0
+*/
+
+.onZoomIn{
+	-webkit-animation: onZoomIn 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: onZoomIn 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.offZoomIn{
+	-webkit-animation: offZoomIn 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: offZoomIn 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.onZoomOut{
+	-webkit-animation: onZoomOut 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: onZoomOut 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.offZoomOut{
+	-webkit-animation: offZoomOut 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: offZoomOut 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.onOpacity{
+	-webkit-animation: onOpacity 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: onOpacity 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.offOpacity{
+	-webkit-animation: offOpacity 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: offOpacity 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.onLeft{
+	-webkit-animation: onLeft 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: onLeft 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.offLeft{
+	-webkit-animation: offLeft 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: offLeft 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.onTop{
+	-webkit-animation: onTop 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: onTop 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.offTop{
+	-webkit-animation: offTop 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: offTop 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.onRight{
+	-webkit-animation: onRight 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: onRight 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.offRight{
+	-webkit-animation: offRight 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: offRight 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.onBottom{
+	-webkit-animation: onBottom 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: onBottom 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+.offBottom{
+	-webkit-animation: offBottom 1s ease-in-out 1;
+	-webkit-animation-fill-mode: forwards;
+	animation: offBottom 1s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes onZoomIn {
+	0% 	{ 	opacity: 0; transform: scale(0.8); }
+	100%{	opacity: 1; transform: scale(1  ); }
+}	
+
+@keyframes offZoomIn {
+	0% 	{ 	opacity: 1; transform: scale(1); }
+	100%{	opacity: 0; transform: scale(0.8); }
+}
+
+@keyframes onZoomOut {
+	0% 	{ 	opacity: 0; transform: scale(1.1); }
+	100%{	opacity: 1; transform: scale(1  ); }
+}	
+
+@keyframes offZoomOut {
+	0% 	{ 	opacity: 1; transform: scale(1  ); }
+	100%{	opacity: 0; transform: scale(1.1); }
+}	
+
+@keyframes onOpacity {
+	0% 	{ 	opacity: 0;  }
+	100%{	opacity: 1;  }
+}
+
+@keyframes offOpacity {
+	0% 	{ 	opacity: 1; }
+	100%{	opacity: 0; }
+}	
+
+@keyframes onLeft {
+	0% 	{ 	opacity: 0; transform: translateX( -100px); }
+	100%{	opacity: 1; transform: translateX( 0px); }
+}
+
+@keyframes offLeft {
+	0% 	{ 	opacity: 1; transform: translateX(   0px); }
+	100%{	opacity: 0; transform: translateX(  100px); }
+}
+
+@keyframes onTop {
+	0% 	{ 	opacity: 0; transform: translateY( -100px); }
+	100%{	opacity: 1; transform: translateY( 0px); }
+}
+
+@keyframes offTop{
+	0% 	{ 	opacity: 1; transform: translateY(   0px); }
+	100%{	opacity: 0; transform: translateY( 100px); }
+}
+
+@keyframes onRight {
+	0% 	{ 	opacity: 0; transform: translateX( 100px); }
+	100%{	opacity: 1; transform: translateX(   0px); }
+}
+
+@keyframes offRight{
+	0% 	{ 	opacity: 1; transform: translateX(   0px); }
+	100%{	opacity: 0; transform: translateX(-100px); }
+}
+
+@keyframes onBottom {
+	0% 	{ 	opacity: 0; transform: translateY(  100px); }
+	100%{	opacity: 1; transform: translateY(   0px); }
+}
+
+@keyframes offBottom {
+	0% 	{ 	opacity: 1; transform: translateY(   0px); }
+	100%{	opacity: 0; transform: translateY( -100px); }
+}
+

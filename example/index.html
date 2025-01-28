@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+<style>
+
+	*, body, html{
+		padding: 0;
+		margin: 0;
+		/border: 1px solid grey;
+		background-color: #000;
+	}
+
+	.main{
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		border: 1px solid #fff;
+    	box-sizing: border-box;
+    	overflow: hidden;
+	}
+
+	.bg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: url(bg.jpg) 50% 50% no-repeat;
+		background-size: cover;
+		z-index: 0;
+	}
+
+	.logo{
+		position: absolute;
+	    top: 80%;
+		left: 5%;
+	    width: 25%;
+	    height: 10%;
+		background: url(logo.png) 0% 50% no-repeat;
+		background-size: contain;
+		z-index: 40;
+	}
+
+	.title1_1{
+		position: absolute;
+	    top: 25%;
+		left: 5%;
+	    width: 55%;
+	    height: 15%;
+		background: url(title1_1.png) 0% 50% no-repeat;
+		background-size: contain;
+		z-index: 2;
+	}
+
+	.subline1_2{
+		position: absolute;
+	    top: 45%;
+		left: 5%;
+	    width: 30%;
+	    height: 10%;
+		background: url(title1_21.png) 0% 50% no-repeat;
+		background-size: contain;
+		z-index: 3;
+	}
+
+	.man1{
+		position: absolute;
+	    top: 10%;
+		left: 55%;
+	    width: 40%;
+	    height: 80%;
+		background: url(man1.png) 50% 50% no-repeat;
+		background-size: contain;
+		z-index: 1;
+	}
+
+	.title2_1{
+		position: absolute;
+	    top: 25%;
+		left: 5%;
+	    width: 55%;
+	    height: 15%;
+		background: url(title2_1.png) 0% 50% no-repeat;
+		background-size: contain;
+		z-index: 2;
+	}
+
+	.subline2_2{
+		position: absolute;
+	    top: 45%;
+		left: 5%;
+	    width: 30%;
+	    height: 10%;
+		background: url(title2_21.png) 0% 50% no-repeat;
+		background-size: contain;
+		z-index: 3;
+	}
+
+	.man2{
+		position: absolute;
+	    top: 10%;
+		left: 55%;
+	    width: 40%;
+	    height: 80%;
+		background: url(man2.png) 50% 50% no-repeat;
+		background-size: contain;
+		z-index: 1;
+	}
+
+	.title3_1{
+		position: absolute;
+	    top: 25%;
+		left: 5%;
+	    width: 55%;
+	    height: 15%;
+		background: url(title3_1.png) 0% 50% no-repeat;
+		background-size: contain;
+		z-index: 2;
+	}
+
+	.subline3_2{
+		position: absolute;
+	    top: 45%;
+		left: 5%;
+	    width: 30%;
+	    height: 10%;
+		background: url(title3_21.png) 0% 50% no-repeat;
+		background-size: contain;
+		z-index: 3;
+	}
+
+	.man3{
+		position: absolute;
+	    top: 10%;
+		left: 55%;
+	    width: 40%;
+	    height: 80%;
+		background: url(man3.png) 50% 50% no-repeat;
+		background-size: contain;
+		z-index: 1;
+	}
+
+	@media (orientation: portrait) {
+
+
+		.logo{
+		    top: 85%;
+			left: 65%;
+		    width: 25%;
+		    height: 10%;
+			background: url(logo.png) 100% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.title1_1{
+		    top: 10%;
+			left: 5%;
+		    width: 90%;
+		    height: 15%;
+			background: url(title1_1.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.subline1_2{
+		    top: 30%;
+			left: 5%;
+		    width: 80%;
+		    height: 10%;
+			background: url(title1_21.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.man1{
+		    top: 45%;
+			left: 0%;
+		    width: 100%;
+		    height: 50%;
+			background: url(man1.png) 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.title2_1{
+		    top: 10%;
+			left: 5%;
+		    width: 90%;
+		    height: 15%;
+			background: url(title2_1.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.subline2_2{
+		    top: 30%;
+			left: 5%;
+		    width: 80%;
+		    height: 10%;
+			background: url(title2_21.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.man2{
+		    top: 45%;
+			left: 0%;
+		    width: 100%;
+		    height: 50%;
+			background: url(man2.png) 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.title3_1{
+		    top: 10%;
+			left: 5%;
+		    width: 90%;
+		    height: 15%;
+			background: url(title3_1.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.subline3_2{
+		    top: 30%;
+			left: 5%;
+		    width: 80%;
+		    height: 10%;
+			background: url(title3_21.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.man3{
+		    top: 45%;
+			left: 0%;
+		    width: 100%;
+		    height: 50%;
+			background: url(man3.png) 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+	}
+
+
+	@media (min-aspect-ratio: 1000/300) {
+		.logo{
+		    top: 50%;
+			left: 85%;
+		    width: 10%;
+		    height: 40%;
+			background: url(logo.png) 100% 100% no-repeat;
+			background-size: contain;
+		}
+
+		.title1_1{
+		    top: 15%;
+			left: 3%;
+		    width: 40%;
+		    height: 45%;
+			background: url(title1_1.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.subline1_2{
+		    top: 65%;
+			left: 3%;
+		    width: 50%;
+		    height: 20%;
+			background: url(title1_2.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.man1{
+		    top: -10%;
+			left: 40%;
+		    width: 60%;
+		    height: 120%;
+			background: url(man1.png) 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.title2_1{
+		    top: 15%;
+			left: 3%;
+		    width: 40%;
+		    height: 45%;
+			background: url(title2_1.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.subline2_2{
+		    top: 65%;
+			left: 3%;
+		    width: 50%;
+		    height: 20%;
+			background: url(title2_2.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.man2{
+		    top: -10%;
+			left: 40%;
+		    width: 60%;
+		    height: 120%;
+			background: url(man2.png) 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.title3_1{
+		    top: 15%;
+			left: 3%;
+		    width: 40%;
+		    height: 45%;
+			background: url(title3_1.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.subline3_2{
+		    top: 65%;
+			left: 3%;
+		    width: 50%;
+		    height: 20%;
+			background: url(title3_2.png) 0% 50% no-repeat;
+			background-size: contain;
+		}
+
+		.man3{
+		    top: -10%;
+			left: 40%;
+		    width: 60%;
+		    height: 120%;
+			background: url(man3.png) 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+
+	}
+
+/* кастомизированны пример стилей анимации вылета космонавта */
+
+.onRotation{
+	animation: onRotation 5s 1;
+	animation-fill-mode: forwards;
+}
+
+.offRotation{
+	animation: offRotation 1s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes onRotation{
+	0% 	{	opacity:0; transform: scale(0.8) rotate(0);		}
+	20% {	opacity:1; }
+	100%{	opacity:1; transform: scale(  1) rotate(10deg);	}
+}
+
+@keyframes offRotation{
+	0% 	{	opacity:1; transform: scale(  1) rotate(10deg);	}
+	100%{	opacity:0; transform: scale(  1) rotate(12deg);	}
+}
+
+</style>
+
+
+</head>
+<body>
+<a href="https://www.banners728.ru/" target="_blank">
+	<div class="main">
+		<div class="frame1">
+			<div class="title1_1"
+				fastAnim_StartStyle="onRight" 
+				fastAnim_StopStyle="offOpacity"
+				fastAnim_StartTime="400" 
+				fastAnim_StopTime="4000">
+			</div>
+			<div class="subline1_2"
+				fastAnim_StartStyle="onLeft" 
+				fastAnim_StopStyle="offOpacity"
+				fastAnim_StartTime="800" 
+				fastAnim_StopTime="4000">
+			</div>
+			<div class="man1"
+				fastAnim_StartStyle="onRotation" 
+				fastAnim_StopStyle="offRotation"
+				fastAnim_StartTime="0" 
+				fastAnim_StopTime="4000">
+			</div>
+		</div>
+		<div class="frame2">
+			<div class="title2_1"
+				fastAnim_StartStyle="onTop" 
+				fastAnim_StopStyle="offOpacity"
+				fastAnim_StartTime="5800" 
+				fastAnim_StopTime="9000">
+			</div>
+			<div class="subline2_2"
+				fastAnim_StartStyle="onTop" 
+				fastAnim_StopStyle="offOpacity"
+				fastAnim_StartTime="5400" 
+				fastAnim_StopTime="9000">
+			</div>
+			<div class="man2"
+				fastAnim_StartStyle="onRotation" 
+				fastAnim_StopStyle="offRotation"
+				fastAnim_StartTime="5000" 
+				fastAnim_StopTime="9000">
+			</div>
+		</div>
+		<div class="frame3">
+			<div class="title3_1"
+				fastAnim_StartStyle="onBottom" 
+				fastAnim_StopStyle="offOpacity"
+				fastAnim_StartTime="10400" 
+				fastAnim_StopTime="14000">
+			</div>
+			<div class="subline3_2"
+				fastAnim_StartStyle="onBottom" 
+				fastAnim_StopStyle="offOpacity"
+				fastAnim_StartTime="10800" 
+				fastAnim_StopTime="14000">
+			</div>
+			<div class="man3"
+				fastAnim_StartStyle="onRotation" 
+				fastAnim_StopStyle="offRotation"
+				fastAnim_StartTime="10000" 
+				fastAnim_StopTime="14000">
+			</div>
+		</div>
+		<div class="logo"></div>
+		<div class="bg"></div>
+	</div>
+</a>
+</body>
+<link href="../fast-js-animation.css" rel="stylesheet">
+<script src="../fast-js-animation.js"></script>
+<script type="text/javascript">
+	initFastAnimation({ 
+		"MasterTiming":15000,	// общий хронометраж 15 сек
+		"numberOfCycles":3,		// баннер зациклен 3 раза
+		"frameStopTime":3000	// после окончания 3го цикла баннер остановится 3 секунде
+	});
+</script>
+
+</html>
